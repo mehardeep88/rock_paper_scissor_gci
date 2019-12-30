@@ -13,8 +13,14 @@ julia> while true
            print(comp_ind)
            result = [[0,2,1],[1,0,2],[2,1,0]]
        end
+       
+------------------------------       
+  
 make a choice: rock
 User's Choice: rock
 Computer's choice: paper
 Choice as index
 01make a choice:
+
+
+-----------------------------
