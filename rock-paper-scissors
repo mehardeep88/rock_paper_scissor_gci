@@ -1,0 +1,20 @@
+julia> while true
+           print("make a choice: ")
+           choice = readline()
+           print("User's Choice:"," ","$choice\n")
+           choices = ["rock","paper","scissors"]
+           comp_choice = choices[rand(1:end)]
+           print("Computer's choice:"," ","$comp_choice\n")
+           print("Choice as index \n")
+           ch_d = Dict("rock" => 0,"paper" => 1, "scissors" => 2)
+           user_ind = ch_d[choice]
+           print(user_ind)
+           comp_ind = ch_d[comp_choice]
+           print(comp_ind)
+           result = [[0,2,1],[1,0,2],[2,1,0]]
+       end
+make a choice: rock
+User's Choice: rock
+Computer's choice: paper
+Choice as index
+01make a choice:
