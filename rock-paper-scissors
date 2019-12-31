@@ -1,12 +1,14 @@
+------------------------------------------------------------------------------------
+CODE:
 julia> while true
            print("make a choice: ")
            choice = readline()
-           println("User's Choice:"," ","$choice\n")
+           println("User's Choice:"," ","$choice")
            choices = ["rock","paper","scissors"]
            comp_choice = choices[rand(1:end)]
-           println("Computer's choice:"," ","$comp_choice\n")
-           println("Choice as index \n")
-           ch_d = Dict("rock" => 0,"paper" => 1, "scissors" => 2)
+           println("Computer's choice:"," ","$comp_choice")
+           println("Choice as index:")
+           ch_d = Dict("rock" => 1,"paper" => 2, "scissors" => 3)
            user_ind = ch_d[choice]
            println("User's index:",user_ind)
            comp_ind = ch_d[comp_choice]
@@ -15,24 +17,14 @@ julia> while true
            result_ind = result[user_ind][comp_ind]
            mssge = [ "A Tie!","You won!!","You Lose :("]
            res = mssge[result_ind]
-           print(res)
+           println("---------",res,"--------")
        end
+      
+--------------------------------------------------------------------------------------
+
+
+
+
        
-       
------------------------------------
-make a choice: rock
-User's Choice: rock
 
-Computer's choice: rock
-
-Choice as index
-
-User's index:0
-Computer Index:0
-ERROR: BoundsError: attempt to access 3-element Array{Array{Int64,1},1} at index [0]
-Stacktrace:
- [1] getindex at .\array.jl:744 [inlined]
- [2] top-level scope at .\REPL[21]:15
- 
- -----------------------------------
 
