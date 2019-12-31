@@ -1,28 +1,19 @@
-------------------------------------------------------------------------------------
-CODE:
 julia> while true
            print("make a choice: ")
            choice = readline()
-           println("User's Choice:"," ","$choice")
+           #println("User's Choice:"," ","$choice")
            choices = ["rock","paper","scissors"]
-           comp_choice = choices[rand(1:end)]
+           comp_choice = rand(choices)
            println("Computer's choice:"," ","$comp_choice")
-           println("Choice as index:")
            ch_d = Dict("rock" => 1,"paper" => 2, "scissors" => 3)
            user_ind = ch_d[choice]
-           println("User's index:",user_ind)
            comp_ind = ch_d[comp_choice]
-           println("Computer Index:",comp_ind)
            result = [[1,3,2],[2,1,3],[3,2,1]]
            result_ind = result[user_ind][comp_ind]
            mssge = [ "A Tie!","You won!!","You Lose :("]
            res = mssge[result_ind]
            println("---------",res,"--------")
        end
-      
---------------------------------------------------------------------------------------
-
-
 
 
        
