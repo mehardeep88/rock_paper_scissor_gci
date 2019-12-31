@@ -20,7 +20,7 @@ while true
        mssge = [ "A Tie!","You won!!","You Lose :(","Invalid input.Please type a valid move"]
        res = mssge[result_ind]
        println("---------",res,"--------")
-   end
+end
 
 
        
