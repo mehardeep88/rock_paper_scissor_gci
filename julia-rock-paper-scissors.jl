@@ -13,8 +13,8 @@ while true
        comp_choice = rand(choices)
        println("Computer's choice:"," ","$comp_choice")
        ch_d = Dict("rock" => 1,"paper" => 2, "scissors" => 3)
-       user_ind = get(ch_d, choice)
-       comp_ind = get(ch_d, comp_choice)
+       user_ind = get(ch_d, choice,4)
+       comp_ind = get(ch_d, comp_choice,4)
        result = [[1,3,2],[2,1,3],[3,2,1],[4,4,4]]
        result_ind = result[user_ind][comp_ind]
        mssge = [ "A Tie!","You won!!","You Lose :(","Invalid input.Please type a valid move"]
