@@ -4,8 +4,7 @@ println("Player should choose one between rock,paper and scissors")
 
 println("Rock beats scissors,scissors beat paper and paper beats rock")
 println("Can you beat the computer? ;)")
-
-while true
+for range in 1:3
        print("Now,make a choice between rock,paper or scissors: ")
        choice = readline()
        
