@@ -7,7 +7,7 @@ println("Can you beat the computer? ;)")
 
 
 
-function game()
+function rps()
     pl1 = 0
     pl2 = 0
     while true
@@ -28,7 +28,9 @@ function game()
         println("---------",res,"--------")
             (res == mssge[2]) ? pl1 += 1 : pl1 += 0
             (res == mssge[3]) ? pl2 += 1 : pl2 += 0
-pl1 == 2 || pl2 == 2 ? break : continue
+#pl1 == 2 || pl2 == 2 ? break : continue
+while !(pl1 == 2 || pl2 == 2)
+end
     end
 end
 
